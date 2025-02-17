@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtheronAI - Decentralized Intelligence Network for AI, Blockchain & IoT Ecosystems</title>
+    <meta name="description" content="EtheronAI is a decentralized intelligence network leveraging AI, blockchain, and IoT to create a self-evolving, self-optimizing global ecosystem. Explore how we transform industries with real-time data processing, adaptive learning, and cross-platform narrative construction." />
+    <meta name="keywords" content="EtheronAI, decentralized intelligence, AI network, blockchain, IoT, artificial intelligence, machine learning, distributed computing, smart contracts" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white transition-colors duration-300">
+    <div id="loading" style="flex-direction: column;">
+        <svg class="w-24 h-24 text-indigo-600 dark:text-indigo-400 mb-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3" stroke-width="2" />
+            <line x1="12" y1="5" x2="12" y2="9" stroke-width="2" />
+            <line x1="12" y1="15" x2="12" y2="19" stroke-width="2" />
+            <line x1="5" y1="12" x2="9" y2="12" stroke-width="2" />
+            <line x1="15" y1="12" x2="19" y2="12" stroke-width="2" />
+            <line x1="7" y1="7" x2="10" y2="10" stroke-width="2" />
+            <line x1="14" y1="14" x2="17" y2="17" stroke-width="2" />
+            <line x1="7" y1="17" x2="10" y2="14" stroke-width="2" />
+            <line x1="14" y1="7" x2="17" y2="10" stroke-width="2" />
+            <circle cx="12" cy="12" r="8" stroke-width="2" stroke-dasharray="2 2" />
+        </svg>
+        <div class="text-6xl font-bold gradient-text">EtheronAI</div>
+    </div>
+
+    <nav class="fixed w-full bg-white/80 backdrop-blur-lg dark:bg-slate-900/80 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3" stroke-width="2" />
+                    <line x1="12" y1="5" x2="12" y2="9" stroke-width="2" />
+                    <line x1="12" y1="15" x2="12" y2="19" stroke-width="2" />
+                    <line x1="5" y1="12" x2="9" y2="12" stroke-width="2" />
+                    <line x1="15" y1="12" x2="19" y2="12" stroke-width="2" />
+                    <line x1="7" y1="7" x2="10" y2="10" stroke-width="2" />
+                    <line x1="14" y1="14" x2="17" y2="17" stroke-width="2" />
+                    <line x1="7" y1="17" x2="10" y2="14" stroke-width="2" />
+                    <line x1="14" y1="7" x2="17" y2="10" stroke-width="2" />
+                    <circle cx="12" cy="12" r="8" stroke-width="2" stroke-dasharray="2 2" />
+                </svg>
+                <span class="text-xl font-bold gradient-text">EtheronAI</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex space-x-4">
+                    <a href="https://etheron.meme/" target="_blank" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">Memecoin</a>
+                    <a href="#features" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">Features</a>
+                    <a href="#tech-highlights" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">Tech Highlights</a>
+                    <a href="#applications" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">Applications</a>
+                    <a href="#future-outlook" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">Future Outlook</a>
+                    <a href="#about" class="px-4 py-2 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-full transition-colors duration-200">About</a>
+                </div>
+                <button id="themeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800">
+                    <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                    </svg>
+                    <svg class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center pt-20 bg-white dark:bg-slate-900">
+        <div class="container mx-auto px-6 py-24 text-center page-transition">
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 gradient-text leading-tight">
+                EtheronAI <br>
+                <span class="text-indigo-600 dark:text-indigo-400">Distributed Intelligence Network</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-600 dark:text-zinc-300 mb-12 max-w-3xl mx-auto">
+                A self-evolving, self-optimizing intelligent ecosystem embedded in every layer of the internet, from social media to IoT devices, forming a seamlessly connected intelligent network.
+            </p>
+            <div class="flex justify-center space-x-4 hero-buttons">
+                <a href="#features" class="px-8 py-4 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors">
+                    Explore Core Features
+                </a>
+                <a href="#future-outlook" class="px-8 py-4 border-2 border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400 rounded-full hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-colors">
+                    Future Vision
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 dark:bg-slate-800" id="features">
+        <div class="container mx-auto px-6 text-center mb-16 page-transition">
+            <h2 class="text-4xl font-bold gradient-text mb-8">Core Features</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Explore the key functionalities that make EtheronAI a revolutionary intelligent network.</p>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900 rounded-xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Intelligent Signal Filtering & Enhancement</h3>
+                <p class="text-gray-600 dark:text-gray-300">Utilizes deep learning models to extract valuable signals from large data streams, effectively filtering out noise and amplifying key trends.</p>
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Real-time Data Processed: <span id="dataProcessed">0</span> GB</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Noise Filtered: <span id="noiseFiltered">0</span> GB</p>
+                </div>
+                <button id="showDemoBtn" class="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors">
+                    View Demo
+                </button>
+            </div>
+
+            <div id="demoModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-11/12 max-w-4xl p-8 relative">
+                    <button id="closeDemoBtn" class="absolute top-4 right-4 p-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    <h2 class="text-2xl font-bold gradient-text mb-6">Signal Filtering & Enhancement Demo</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Raw Signal</h3>
+                            <canvas id="rawSignalChart" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg"></canvas>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Filtered & Enhanced Signal</h3>
+                            <canvas id="filteredSignalChart" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg"></canvas>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                        This demo simulates AI-powered signal filtering and enhancement. The raw signal contains noise, while the filtered signal highlights key trends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Distributed Intelligent Network</h3>
+                <p class="text-gray-600 dark:text-gray-300">A decentralized network of AI nodes that ensures data security and transparency through the use of blockchain technology, fostering trust and efficient data sharing.</p>
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Active Nodes: <span id="activeNodes">0</span></p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Data Processed Locally: <span id="localData">0</span> GB</p>
+                </div>
+                <button id="showNetworkDemoBtn" class="mt-4 px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
+                    View Demo
+                </button>
+            </div>
+
+            <div id="networkDemoModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-11/12 max-w-4xl p-8 relative">
+                    <button id="closeNetworkDemoBtn" class="absolute top-4 right-4 p-2 text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    <h2 class="text-2xl font-bold gradient-text mb-6">Distributed Intelligent Network Demo</h2>
+                    <div class="relative">
+                        <canvas id="networkCanvas" class="w-full h-96 bg-gray-50 dark:bg-slate-800 rounded-lg"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                        This demo simulates a decentralized network of AI nodes. Each node processes data locally and communicates with other nodes in real-time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Adaptive Learning & Evolution</h3>
+                <p class="text-gray-600 dark:text-gray-300">Continuously optimizes performance by learning from each information processing, enhancing its analysis and prediction capabilities.</p>
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Predictions Made Today: <span id="predictionsMade">0</span></p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Accuracy: <span id="accuracy">0</span>%</p>
+                </div>
+                <button id="showLearningDemoBtn" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors">
+                    View Demo
+                </button>
+            </div>
+
+            <div id="learningDemoModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-11/12 max-w-4xl p-8 relative">
+                    <button id="closeLearningDemoBtn" class="absolute top-4 right-4 p-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    <h2 class="text-2xl font-bold gradient-text mb-6">Adaptive Learning & Evolution Demo</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Training Progress</h3>
+                            <canvas id="trainingChart" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg"></canvas>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Predictions</h3>
+                            <div id="predictionsContainer" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg p-4 overflow-y-auto">
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Predictions will appear here...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                        This demo simulates adaptive learning and evolution. The model continuously improves its accuracy and makes predictions based on new data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-xl mb-6 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Cross-Platform Narrative Construction</h3>
+                <p class="text-gray-600 dark:text-gray-300">Actively participates in global narrative construction by generating AI-driven content tailored to different cultural and linguistic contexts.</p>
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Content Generated: <span id="contentGenerated">0</span> Articles</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Languages Supported: <span id="languagesSupported">0</span></p>
+                </div>
+                <button id="showNarrativeDemoBtn" class="mt-4 px-4 py-2 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition-colors">
+                    View Demo
+                </button>
+            </div>
+        </div>
+
+        <div id="narrativeDemoModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+            <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg w-11/12 max-w-4xl p-8 relative">
+                <button id="closeNarrativeDemoBtn" class="absolute top-4 right-4 p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                <h2 class="text-2xl font-bold gradient-text mb-6">Cross-Platform Narrative Construction Demo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Source Content</h3>
+                        <div id="sourceContent" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg p-4 overflow-y-auto">
+                            <p class="text-sm text-gray-600 dark:text-gray-300">The rapid advancement of AI technology is transforming industries worldwide, enabling smarter decision-making and innovative solutions.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Generated Content</h3>
+                        <div id="generatedContent" class="w-full h-48 bg-gray-50 dark:bg-slate-800 rounded-lg p-4 overflow-y-auto">
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Generated content will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="generateContentBtn" class="mt-6 px-6 py-3 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition-colors">
+                    Generate Content
+                </button>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                    This demo simulates AI-driven content generation for different platforms. Click "Generate Content" to see how the source content is adapted for various platforms.
+                </p>
+            </div>
+        </div>
+        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-lg text-center text-indigo-400 dark:text-indigo-400 mx-auto max-w-3xl my-12">
+            <p class="text-xs text-gray-400 dark:text-gray-400 font-medium">
+                Please note: EtheronAI is currently under active development. The core infrastructure has been established, but many features are still being refined and tested. All statistics presented are based on simulated testing and debugging. We appreciate your understanding as we work towards a Smarter networks, smarter world fully functional system.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white dark:bg-slate-900" id="tech-highlights">
+        <div class="container mx-auto px-6 text-center mb-16 page-transition">
+            <h2 class="text-4xl font-bold gradient-text mb-8">Technical Highlights</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Explore the cutting-edge technologies powering EtheronAI.</p>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Emotion & Semantic Understanding</h3>
+                <p class="text-gray-600 dark:text-gray-300">Advanced emotion and NLP technologies for deep understanding of human emotions and intent, generating human-like responses.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Edge Computing & IoT Integration</h3>
+                <p class="text-gray-600 dark:text-gray-300">AI nodes embedded in IoT devices for localized real-time data processing and decision-making, reducing reliance on central servers.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Blockchain for Data Security & Transparency</h3>
+                <p class="text-gray-600 dark:text-gray-300">Ensures data integrity and traceability with blockchain, recording all AI node operations and data exchanges securely.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Smart Contracts</h3>
+                <p class="text-gray-600 dark:text-gray-300">Automates tasks and agreements with smart contracts, ensuring fairness and transparency in transactions and processes.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Decentralized Identity Verification</h3>
+                <p class="text-gray-600 dark:text-gray-300">Utilizes blockchain for decentralized identity verification, securing node and user identities against malicious intrusions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 dark:bg-slate-900" id="applications">
+        <div class="container mx-auto px-6 text-center mb-16 page-transition">
+            <h2 class="text-4xl font-bold gradient-text mb-8">Application Scenarios</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Discover how EtheronAI is transforming various sectors.</p>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Social Media Management</h3>
+                <p class="text-gray-600 dark:text-gray-300">Manages social media information flow, automatically addressing negative sentiment and enhancing brand image.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Financial Prediction & Trading</h3>
+                <p class="text-gray-600 dark:text-gray-300">Provides precise market predictions and automated trading strategies by analyzing real-time global financial data.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Global Crisis Early Warning</h3>
+                <p class="text-gray-600 dark:text-gray-300">Monitors global events for crises like natural disasters and pandemics, providing early warnings and aiding response planning.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Cross-Cultural Communication</h3>
+                <p class="text-gray-600 dark:text-gray-300">Facilitates cross-cultural communication for global enterprises, generating culturally relevant marketing content.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Smart Homes & Cities</h3>
+                <p class="text-gray-600 dark:text-gray-300">Enables smart management of homes and cities through IoT integration, enhancing living quality and urban efficiency.</p>
+            </div>
+            <div class="p-8 bg-gray-50 dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Open Source Initiative</h3>
+                <p class="text-gray-600 dark:text-gray-300">We are committed to open-source development. In the near future, we plan to release key components of EtheronAI on GitHub, fostering collaboration and innovation within the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-100 dark:bg-slate-800" id="future-outlook">
+        <div class="container mx-auto px-6 text-center mb-16 page-transition">
+            <h2 class="text-4xl font-bold gradient-text mb-8">Future Outlook</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">EtheronAI is continuously evolving, with ambitious plans to integrate cutting-edge technologies that will further enhance its capabilities.</p>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Advanced AI Evolution</h3>
+                <p class="text-gray-600 dark:text-gray-300">Development of more sophisticated AI models capable of autonomous decision-making and problem-solving in dynamic environments.</p>
+            </div>
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Quantum Computing Integration</h3>
+                <p class="text-gray-600 dark:text-gray-300">Future integration of quantum computing to exponentially increase data processing speeds and handle complex computations.</p>
+            </div>
+            <div class="p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow page-transition">
+                <h3 class="text-xl font-bold mb-4 gradient-text">Global Neural Network Expansion</h3>
+                <p class="text-gray-600 dark:text-gray-300">Expansion of the distributed network to create a global neural network, enabling real-time data sharing and collaboration across continents.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative h-screen bg-black dark:bg-slate-900" id="network-dynamics">
+        <div id="threejs-container" class="absolute inset-0"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center bg-white/80 dark:bg-slate-900/80 p-8 rounded-2xl backdrop-blur-lg">
+                <h2 class="text-4xl font-bold gradient-text mb-6">Real-Time Network Dynamics</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Visualizing the interconnected AI nodes across global ecosystems.</p>
+                <div class="mt-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Active Nodes: <span id="networkNodes">0</span></p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Data Transferred: <span id="networkData">0</span> GB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white dark:bg-slate-900" id="about">
+        <div class="container mx-auto px-6 text-center page-transition">
+            <h2 class="text-4xl font-bold gradient-text mb-8">About EtheronAI</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-12">
+                EtheronAI is an AI-driven distributed intelligence network that integrates blockchain and IoT technologies. It is designed to parse and optimize global information flow in real-time through deep learning and adaptive algorithms. More than just an information processing tool, EtheronAI is a self-evolving intelligent ecosystem seamlessly integrated into the internet, from social media to IoT devices.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://x.com/etheron_ai" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-500">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26l8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@etheronai" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-500">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 25 25">
+                        <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0115.54 3h-3.09v12.4a2.592 2.592 0 01-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 004.3 1.38V7.3s-1.88.09-3.24-1.48z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/EtheronAI" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-500">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.091-.647.349-1.088.635-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.683-.103-.253-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.547 1.377.203 2.394.1 2.647.64.699 1.026 1.592 1.026 2.683 0 3.842-2.337 4.688-4.565 4.935.359.307.678.915.678 1.846 0 1.335-.012 2.415-.012 2.741 0 .267.18.577.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+                <a href="mailto:support@etheron.ai" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-500">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 dark:bg-slate-900 text-gray-600 dark:text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center page-transition">
+            <p>&copy; 2025, EtheronAI Inc.</p>
+        </div>
+    </footer>
+
+    <div id="scrollToTop">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </div>
+
+    <script src="/js/three.min.js"></script>
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
